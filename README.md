@@ -1,44 +1,27 @@
-### 🎯 Objetivo
+# ⚙️ Instrucciones para ejecutar el proyecto
 
-Desarrollar una aplicación Vue.js/React que cargue formularios dinámicamente a partir de un archivo JSON, con validaciones avanzadas y una interfaz limpia.
+Clona el repositorio:
 
-### 📋 Requisitos
+```bash
+git clone https://github.com/drkedev/prueba-tecnica-bytetravel.git
+cd prueba-tecnica-bytetravel
+```
 
-##### Funcionalidades mínimas:
-- Carga Dinámica del Formulario:
-	- Leer las preguntas desde un archivo questions.json.
-	- Soportar diferentes tipos de preguntas: texto, correo, contraseña, número, fecha, select, checkbox, radio.
+Instala las dependencias (recomendado con pnpm, aunque también sirve npm o yarn):
 
-##### Validaciones:
-- Validar cada campo según sus reglas definidas en el JSON.
-- Mostrar mensajes de error en tiempo real.
-- Prevenir el envío del formulario si hay errores.
+```bash
+pnpm install
+```
 
-##### Estructura del Archivo JSON (db/questions.json):
-````
- {
-    "id": 1,
-    "label": "Nombre completo",
-    "type": "text",
-    "placeholder": "Ingresa tu nombre completo",
-    "validation": {
-      "required": true,
-      "minLength": 3,
-      "pattern": "^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$"
-    }
-  },
-````
+Ejecuta el servidor de desarrollo:
 
-### 💡 Bonus (no obligatorio pero suma puntos)
-- Diseño limpio y responsive (Tailwind, Bootstrap o CSS puro).
+```bash
+pnpm dev
+# o
+npm run dev
+# o
+yarn dev
+```
 
+Abre <http://localhost:3000> en tu navegador.
 
-### 📦 Entregables
- - Repositorio (GitHub, GitLab o ZIP).
- - README con instrucciones para ejecutar (npm install, npm run dev, etc.).
-
-### 📝 Criterios de evaluación
-- Manejo correcto del JSON para formularios dinámicos.
-- Organización y claridad del código.
-- Diseño y experiencia del usuario.
-- Bonus: calidad visual y accesibilidad.
