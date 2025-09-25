@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "label": "Nombre completo",
+    "type": "text",
+    "placeholder": "Ingresa tu nombre completo",
+    "validation": {
+      "required": true,
+      "minLength": 3,
+      "pattern": "^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$"
+    }
+  },
+  {
+    "id": 2,
+    "label": "Correo electrónico",
+    "type": "email",
+    "placeholder": "Ingresa tu correo",
+    "validation": {
+      "required": true,
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+    }
+  },
+  {
+    "id": 3,
+    "label": "Contraseña",
+    "type": "password",
+    "placeholder": "Ingresa tu contraseña",
+    "validation": {
+      "required": true,
+      "minLength": 8,
+      "pattern": "^(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
+    }
+  },
+  {
+    "id": 4,
+    "label": "Confirmación de contraseña",
+    "type": "password",
+    "placeholder": "Confirma tu contraseña",
+    "validation": {
+      "required": true,
+      "matchField": "Contraseña"
+    }
+  },
+  {
+    "id": 5,
+    "label": "País",
+    "type": "select",
+    "options": ["México", "Colombia", "Perú", "Argentina", "Chile"],
+    "validation": {
+      "required": true
+    }
+  },
+  {
+    "id": 6,
+    "label": "Fecha de nacimiento",
+    "type": "date",
+    "validation": {
+      "required": true,
+      "minAge": 18
+    }
+  },
+  {
+    "id": 7,
+    "label": "Sexo",
+    "type": "radio",
+    "options": ["Masculino", "Femenino", "Otro"],
+    "validation": {
+      "required": true
+    }
+  },
+  {
+    "id": 8,
+    "label": "Biografía corta",
+    "type": "textarea",
+    "placeholder": "Cuéntanos algo sobre ti...",
+    "validation": {
+      "required": false,
+      "maxLength": 200
+    }
+  },
+  {
+    "id": 9,
+    "label": "Subir foto de perfil",
+    "type": "file",
+    "validation": {
+      "required": false,
+      "accept": [".jpg", ".png"]
+    }
+  },
+  {
+    "id": 10,
+    "label": "Acepto los términos y condiciones",
+    "type": "checkbox",
+    "validation": {
+      "required": true
+    }
+  }
+]
+
